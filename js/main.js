@@ -90,7 +90,7 @@ $(function(){
         var position = top - $(window).height();  // 発火させたい位置
         var position_bottom = top + $('.profile-h2').height();
         if($(window).scrollTop() > position && $(window).scrollTop() < position_bottom){
-            $('.profile-h2').css('color','#d30404');
+            $('.profile-h2').css('color','#8a0606');
         }else{
             $('.profile-h2').css('color','black');
         }
@@ -102,7 +102,7 @@ $(function(){
         var position = top - $(window).height();  // 発火させたい位置
         var position_bottom = top + $('.works-h2').height();
         if($(window).scrollTop() > position && $(window).scrollTop() < position_bottom){
-            $('.works-h2').css('color','#d30404');
+            $('.works-h2').css('color','#6d0606');
         }else{
             $('.works-h2').css('color','black');
         }
@@ -114,7 +114,7 @@ $(function(){
         var position = top - $(window).height();  // 発火させたい位置
         var position_bottom = top + $('.skills-h2').height();
         if($(window).scrollTop() > position && $(window).scrollTop() < position_bottom){
-            $('.skills-h2').css('color','#d30404');
+            $('.skills-h2').css('color','#8a0606');
         }else{
             $('.skills-h2').css('color','black');
         }
@@ -126,7 +126,7 @@ $(function(){
         var position = top - $(window).height();  // 発火させたい位置
         var position_bottom = top + $('.cando-h2').height();
         if($(window).scrollTop() > position && $(window).scrollTop() < position_bottom){
-            $('.cando-h2').css('color','#d30404');
+            $('.cando-h2').css('color','#8a0606');
         }else{
             $('.cando-h2').css('color','black');
         }
@@ -138,7 +138,7 @@ $(function(){
         var position = top - $(window).height();  // 発火させたい位置
         var position_bottom = top + $('.contact-h2').height();
         if($(window).scrollTop() > position && $(window).scrollTop() < position_bottom){
-            $('.contact-h2').css('color','#d30404');
+            $('.contact-h2').css('color','#8a0606');
         }else{
             $('.contact-h2').css('color','black');
         }
