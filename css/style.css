@@ -83,11 +83,13 @@ main {
     main #profile-wrapper .profile-inner .profile-img {
       border-radius: 50%;
       margin-left: 30px; }
-  main #profile-wrapper .profile-content h3 {
-    font-size: 32px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px; }
+  main #profile-wrapper .profile-content {
+    width: 90%; }
+    main #profile-wrapper .profile-content h3 {
+      font-size: 32px;
+      padding: 10px;
+      margin-left: 20px;
+      margin-bottom: 20px; }
   main #works-wrapper {
     margin: 100px 0;
     position: relative; }
@@ -494,7 +496,7 @@ footer {
       border: none;
       padding: 0;
       width: 42px;
-      color: #333;
+      color: #fff;
       letter-spacing: 0.1em;
       cursor: pointer;
       position: fixed;
@@ -506,7 +508,7 @@ footer {
     header button span.bar {
       display: block;
       height: 2px;
-      background-color: #333;
+      background-color: #fff;
       margin: 10px 0;
       transition: all 0.2s;
       transform-origin: 0 0; }
@@ -656,6 +658,8 @@ footer {
   main .main-top .top-text {
     font-family: "Permanent Marker", cursive !important;
     font-size: 50px; }
+  main #works-wrapper {
+    margin-top: 220px; }
 
   #formens-modal {
     display: none;
