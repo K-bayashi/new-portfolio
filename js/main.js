@@ -78,8 +78,8 @@ $(function(){
             $('.bar').css('background-color','white');
             $('.close').css('color','white');
         }else{
-            $('.bar').css('background-color','#333');
-            $('.close').css('color','#333');
+            $('.bar').css('background-color','#fff');
+            $('.close').css('color','#fff');
         }
     })
 })
