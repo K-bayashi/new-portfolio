@@ -79,6 +79,7 @@ $main-color:rgb(151, 150, 150); //メインの色
             position: relative;
             .nav-title{
                 font-size: 30px;
+                margin-left: 20px;
             }
             li{
                 width:15%;
@@ -159,17 +160,17 @@ $main-color:rgb(151, 150, 150); //メインの色
             position: relative;
             .works-list{
                 ul{
-                    li{
-                        list-style: none;
-                        margin-bottom: 30px;
-                        border: solid 1px #fff;
-                        background: #fff;
+                    background: #fff;
                         padding: 20px 15px;
                         width: 80%;
                         display:block;
                         margin: 0 auto;
+                        border: solid 1px #fff;
+                    li{
+                        list-style: none;
+                        margin-bottom: 30px;
                         img{
-                            width: 40%;
+                            width: 50%;
                         }
                     }
                 }
@@ -365,7 +366,7 @@ $main-color:rgb(151, 150, 150); //メインの色
                 margin: 0 auto;
                 height: 200px;
                 box-shadow: black 5px 5px 5px;
-                padding-top: 2%;
+                padding-top: 25px;
                 background: #fff;
                a{
                    padding: 10px 10px ;
@@ -523,7 +524,7 @@ opacity: 0.5;
             }
         }
         #profile-wrapper{
-            height: 700px;
+            height: 580px;
             .profile-inner{
                 display: block;
             }
@@ -552,13 +553,37 @@ opacity: 0.5;
         #cando-wrapper{
             .cando-list{
                 li{
+                    .lp-img{
+                        width:40%;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                    .pc_wp-img{
+                        width:60%;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                    .pc-img{
+                        width:60%;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                    .pc-code-img{
+                        width:60%;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
                     .cando-description{
                         width: 90%;
                     }
                 }
             }
         }
-        .contact{
+        #contact-wrapper{
          .contact-card{
              width: max-content;
          }
