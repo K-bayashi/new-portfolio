@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Kilowatt', Tahoma, Verdana, sans-serif; }
+  font-family: 'Kano','Noto Sans', sans-serif; }
 
 .fadeIn {
   opacity: 0;
@@ -66,7 +66,8 @@ main {
     font-size: 42px;
     text-align: center;
     margin: 30px;
-    transition: all 3s; }
+    transition: all 3s;
+    text-shadow: #969696 2px 2px 2px; }
   main #profile-wrapper .profile-inner {
     display: flex;
     height: 300px;
@@ -86,12 +87,16 @@ main {
     margin: 100px 0;
     position: relative; }
     main #works-wrapper .works-list ul li {
-      max-width: 150px;
+      list-style: none;
+      margin-bottom: 30px;
+      border: solid 1px #fff;
+      background: #fff;
+      padding: 20px 15px;
+      width: 80%;
+      display: block;
       margin: 0 auto; }
       main #works-wrapper .works-list ul li img {
-        max-width: 150px; }
-      main #works-wrapper .works-list ul li p {
-        margin: 20px; }
+        width: 40%; }
     main #works-wrapper #formens-modal {
       width: 40%;
       display: none;
@@ -287,25 +292,20 @@ main {
         transform: rotate(45deg); }
       main #works-wrapper #inter-modal img {
         zoom: 1; }
-    main #works-wrapper ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      main #works-wrapper ul li {
-        list-style: none;
-        margin-left: 50px; }
     main #works-wrapper .works-h2 {
       font-size: 42px;
       text-align: center;
       margin: 30px;
-      transition: all 3s; }
+      transition: all 3s;
+      text-shadow: #969696 2px 2px 2px; }
     main #works-wrapper .always img {
       padding-left: 20px; }
   main #skills-wrapper .skills-h2 {
     font-size: 42px;
     text-align: center;
     margin: 30px;
-    transition: all 3s; }
+    transition: all 3s;
+    text-shadow: #969696 2px 2px 2px; }
   main #skills-wrapper .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -318,7 +318,7 @@ main {
       display: block; }
     main #skills-wrapper .skills-list .css::after {
       content: '';
-      width: 60%;
+      width: 70%;
       height: 50px;
       background: red;
       display: block; }
@@ -327,7 +327,9 @@ main {
       width: 50%;
       height: 50px;
       background: red;
-      display: block; }
+      display: block;
+      position: absolute;
+      bottom: 0; }
     main #skills-wrapper .skills-list .jq::after {
       content: '';
       width: 50%;
@@ -342,7 +344,7 @@ main {
       display: block; }
     main #skills-wrapper .skills-list .wp::after {
       content: '';
-      width: 50%;
+      width: 80%;
       height: 50px;
       background: red;
       display: block; }
@@ -350,9 +352,9 @@ main {
       list-style: none;
       margin: 30px;
       font-size: 30px;
-      border: black 1px solid;
       box-shadow: 5px 5px 10px;
-      background: #fff; }
+      background: #fff;
+      position: relative; }
       main #skills-wrapper .skills-list li .skill-title {
         margin: 10px;
         font-size: 35px; }
@@ -367,11 +369,11 @@ main {
     font-size: 42px;
     text-align: center;
     margin: 30px;
-    transition: all 3s; }
+    transition: all 3s;
+    text-shadow: #969696 2px 2px 2px; }
   main #cando-wrapper .cando-list li {
     width: 80%;
     background: #fff;
-    border: 1px solid black;
     text-align: center;
     list-style: none;
     margin: 0 auto;
@@ -380,6 +382,26 @@ main {
     padding: 20px;
     box-shadow: 4px 4px 4px #000000;
     font-size: 24px; }
+    main #cando-wrapper .cando-list li .lp-img {
+      width: 20%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    main #cando-wrapper .cando-list li .pc_wp-img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    main #cando-wrapper .cando-list li .pc-img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    main #cando-wrapper .cando-list li .pc-code-img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px; }
     main #cando-wrapper .cando-list li .cando-title {
       font-size: 28px;
       font-weight: bold; }
@@ -391,21 +413,28 @@ main {
   main #contact-wrapper {
     padding-bottom: 50px; }
     main #contact-wrapper .contact-card {
-      border: 1px solid black;
       padding: 20px;
       width: max-content;
       margin: 0 auto;
       height: 200px;
       box-shadow: black 5px 5px 5px;
-      padding-top: 80px;
+      padding-top: 2%;
       background: #fff; }
-      main #contact-wrapper .contact-card p {
-        text-align: center; }
+      main #contact-wrapper .contact-card a {
+        padding: 10px 10px;
+        background: orange;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        margin-top: 20px; }
+      main #contact-wrapper .contact-card a:hover {
+        opacity: .8; }
     main #contact-wrapper .contact-h2 {
       font-size: 42px;
       text-align: center;
       margin: 30px;
-      transition: all 3s; }
+      transition: all 3s;
+      text-shadow: #969696 2px 2px 2px; }
 
 footer {
   height: 150px;
