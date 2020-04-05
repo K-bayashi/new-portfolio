@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kano','Noto Sans', sans-serif;
+    font-family:'vdl-v7gothic', sans-serif;
 }
-@mixin Head2 {  //h2用のcss
-    font-size: 42px;
+@mixin Head2 {
+    //h2用のcssfont-size: 42px;
     text-align: center;
     margin: 30px;
     transition: all 3s;
     text-shadow: rgb(150, 150, 150) 2px 2px 2px;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
 }
 @mixin  modal { //modal用のcss
     width:40%;
