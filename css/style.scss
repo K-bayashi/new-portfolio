@@ -162,7 +162,7 @@ $main-color:rgb(151, 150, 150); //メインの色
     
         #works-wrapper{
             margin:100px 0;
-            position: relative;
+            position:relative;
             .works-list{
                 ul{
                     background: #fff;
@@ -239,7 +239,7 @@ $main-color:rgb(151, 150, 150); //メインの色
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                width: 80%;
+                width:80%;
                 margin: 0 auto;
                 .html::after{
                     content: '';
