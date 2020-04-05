@@ -22,7 +22,8 @@ header {
     display: flex;
     position: relative; }
     header ul .nav-title {
-      font-size: 30px; }
+      font-size: 30px;
+      margin-left: 20px; }
     header ul li {
       width: 15%;
       list-style: none;
@@ -86,17 +87,18 @@ main {
   main #works-wrapper {
     margin: 100px 0;
     position: relative; }
-    main #works-wrapper .works-list ul li {
-      list-style: none;
-      margin-bottom: 30px;
-      border: solid 1px #fff;
+    main #works-wrapper .works-list ul {
       background: #fff;
       padding: 20px 15px;
       width: 80%;
       display: block;
-      margin: 0 auto; }
-      main #works-wrapper .works-list ul li img {
-        width: 40%; }
+      margin: 0 auto;
+      border: solid 1px #fff; }
+      main #works-wrapper .works-list ul li {
+        list-style: none;
+        margin-bottom: 30px; }
+        main #works-wrapper .works-list ul li img {
+          width: 50%; }
     main #works-wrapper #formens-modal {
       width: 40%;
       display: none;
@@ -418,7 +420,7 @@ main {
       margin: 0 auto;
       height: 200px;
       box-shadow: black 5px 5px 5px;
-      padding-top: 2%;
+      padding-top: 25px;
       background: #fff; }
       main #contact-wrapper .contact-card a {
         padding: 10px 10px;
@@ -529,7 +531,7 @@ footer {
   main .main-top .top-text {
     font-size: 80px; }
   main #profile-wrapper {
-    height: 700px; }
+    height: 580px; }
     main #profile-wrapper .profile-inner {
       display: block; }
   main #formens-modal {
@@ -597,9 +599,29 @@ footer {
       zoom: 1.5 !important; }
     main #inter-modal img {
       zoom: 1 !important; }
+  main #cando-wrapper .cando-list li .lp-img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  main #cando-wrapper .cando-list li .pc_wp-img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  main #cando-wrapper .cando-list li .pc-img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  main #cando-wrapper .cando-list li .pc-code-img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
   main #cando-wrapper .cando-list li .cando-description {
     width: 90%; }
-  main .contact .contact-card {
+  main #contact-wrapper .contact-card {
     width: max-content; }
 
   footer .message p {
