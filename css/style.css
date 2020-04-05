@@ -68,7 +68,11 @@ main {
     text-align: center;
     margin: 30px;
     transition: all 3s;
-    text-shadow: #969696 2px 2px 2px; }
+    text-shadow: #969696 2px 2px 2px;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s; }
   main #profile-wrapper .profile-inner {
     display: flex;
     height: 300px;
@@ -299,7 +303,11 @@ main {
       text-align: center;
       margin: 30px;
       transition: all 3s;
-      text-shadow: #969696 2px 2px 2px; }
+      text-shadow: #969696 2px 2px 2px;
+      -webkit-transition: all 3s;
+      -moz-transition: all 3s;
+      -ms-transition: all 3s;
+      -o-transition: all 3s; }
     main #works-wrapper .always img {
       padding-left: 20px; }
   main #skills-wrapper .skills-h2 {
@@ -307,11 +315,17 @@ main {
     text-align: center;
     margin: 30px;
     transition: all 3s;
-    text-shadow: #969696 2px 2px 2px; }
+    text-shadow: #969696 2px 2px 2px;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s; }
   main #skills-wrapper .skills-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto; }
     main #skills-wrapper .skills-list .html::after {
       content: '';
       width: 80%;
@@ -372,7 +386,11 @@ main {
     text-align: center;
     margin: 30px;
     transition: all 3s;
-    text-shadow: #969696 2px 2px 2px; }
+    text-shadow: #969696 2px 2px 2px;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s; }
   main #cando-wrapper .cando-list li {
     width: 80%;
     background: #fff;
@@ -436,7 +454,11 @@ main {
       text-align: center;
       margin: 30px;
       transition: all 3s;
-      text-shadow: #969696 2px 2px 2px; }
+      text-shadow: #969696 2px 2px 2px;
+      -webkit-transition: all 3s;
+      -moz-transition: all 3s;
+      -ms-transition: all 3s;
+      -o-transition: all 3s; }
 
 footer {
   height: 150px;
