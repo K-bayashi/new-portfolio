@@ -5,7 +5,8 @@
     font-family:'vdl-v7gothic', sans-serif;
 }
 @mixin Head2 {
-    //h2用のcssfont-size: 42px;
+    //h2用のcss
+    font-size: 42px;
     text-align: center;
     margin: 30px;
     transition: all 3s;
@@ -238,6 +239,8 @@ $main-color:rgb(151, 150, 150); //メインの色
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                width: 80%;
+                margin: 0 auto;
                 .html::after{
                     content: '';
                     width:80%;
@@ -282,7 +285,6 @@ $main-color:rgb(151, 150, 150); //メインの色
                     background: red;
                     display: block;
                 }
-                
                 li{
                     list-style: none;
                     margin:30px;
