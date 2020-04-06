@@ -27,11 +27,11 @@
         <nav>
           <ul>
               <li><p class="nav-title">Portfolio</p></li>
-            　<li class="hover"><a href="#profile-wrapper"><p>Profile</p></a></li>
-              <li class="hover"><a href="#works-wrapper"><p>Works</p></a></li>
-              <li class="hover"><a href="#skills-wrapper"><p>Skills</p></a></li>
-              <li class="hover"><a href="#cando-wrapper"><p>Price</p></a></li>
-              <li class="hover"><a href="#contact-wrapper"><p>Contact</p></a></li>
+            　<li class="hover nav-profile"><a href="#profile-wrapper"><p>Profile</p></a></li>
+              <li class="hover nav-works"><a href="#works-wrapper"><p>Works</p></a></li>
+              <li class="hover nav-skills"><a href="#skills-wrapper"><p>Skills</p></a></li>
+              <li class="hover nav-cando"><a href="#cando-wrapper"><p>Price</p></a></li>
+              <li class="hover nav-contact"><a href="#contact-wrapper"><p>Contact</p></a></li>
              
               <button type="button" class="humbarger-btn">
                 <span class="bar bar1"></span>
@@ -54,19 +54,23 @@
         </nav>
     </header>
     <main>
-        <div class="main-top">
+        <div class="main-top fadeIn">
             <p class="top-text">Welcome To My Page!!</p>
         </div>
-        <section id="profile-wrapper">
+        <section id="profile-wrapper" class="center">
                 <h2 class="profile-h2">Profile</h2>
                 <div class="profile-inner">
                     <img src="img/myprofile.JPG" width="200px" height="200px" alt="プロフィール" class="profile-img fadeIn">
-                   <div class="profile-content">
-                    <h3>Kazuma Kobayashi</h3>
-                    <p>早稲田大学に通うフリーランスWebクリエイター&Webエンジニア。</p>
-                    <p>主にスタートアップやベンチャー、toB、toCなど様々なサイト、ランディングページを制作。</p>
-                    <p>成果の出るLP、サイト制作を心がけております。</p>
-                </div>
+                <dl class="profile-content">
+                    <dt>Name</dt>
+                    <dd>Kazuma Kobayashi</dd>
+                    <dt>Age</dt>
+                    <dd>20</dd>
+                    <dt>School</dt>
+                    <dd>Waseda Univ.</dd>
+                    <dt>Features</dt>
+                    <dd>toB、toC、スタートアップ、ベンチャーなど多様なLP制作・Web制作</dd>
+                </dl>
                 </div>
         </section>
         <section id="works-wrapper">
@@ -74,19 +78,26 @@
                 <h2 class="works-h2">Works</h2>
                 <div class="works-list">
                     <ul>
-                        <li class="fadeIn"><img src="img/dance-pc.png" alt=""></li>
-                        <li class="fadeIn"><img src="img/waka-pc.png" alt=""></li>
+                        <li class="fadeIn center">
+                            <div class="flex">
+                                    <img src="img/dance-pc.png" alt="" class="pc-img">
+                                    <img src="img/da.png" alt="" class="sm-img">
+                            </div>
+                        </li>
+                        <li class="fadeIn center">
+                                <div class="flex">
+                                   <img src="img/waka-pc.png" alt="" class="pc-img">
+                                   <img src="img/waka-sm.png" alt="" class="sm-img">
+                                </div>
+                            </li>
+                            <li class="fadeIn center">
+                                    <div class="flex">
+                                       <img src="img/esp-pc.png" alt="" class="pc-img">
+                                       <img src="img/esp.png" alt="" class="sm-img">
+                                    </div>
+                                </li>
+                                <p>※掲載許可を頂いているサイト、LPのみの掲載。他にも医療系スタートアップのLPやtoB不動産系LPなど実績多数</p>
                     </ul>
-                    <div class="modal">
-                            <div class="modal-bg"></div>
-                            <div id="formens-modal"><img src="img/formens.png" alt="画像"><a href=""></a></div>
-                            <div class="modal-bg"></div>
-                            <div id="flower-modal"><img src="img/dance.png" alt="画像"><a href=""></a></div>
-                            <div class="modal-bg"></div>
-                            <div id="inter-modal"><img src="img/hokuto.png" alt="画像"><a href=""></a></div>
-                            <div class="modal-bg"></div>
-                            <div id="always-modal"><img src="img/espor.png" alt="画像"><a href=""></a></div>
-                    </div>
                 </div>
             </div>
         </section>
