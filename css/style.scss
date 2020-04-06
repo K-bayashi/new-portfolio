@@ -526,7 +526,14 @@ opacity: 0.5;
             }
         }
         #works-wrapper{
-            margin-top: 300px;
+            margin-top: 340px;
+        }
+    }
+}
+@media screen and (max-width:350px){
+    main{
+        #works-wrapper{
+            margin-top: 400px;
         }
     }
 }
