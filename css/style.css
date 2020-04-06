@@ -37,6 +37,13 @@ header {
 
 main {
   background: linear-gradient(to bottom right, #fff, #585858); }
+  main .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .center {
+    display: block;
+    margin: 0 auto; }
   main .modal-bg {
     width: 100%;
     height: 100%;
@@ -63,243 +70,45 @@ main {
       transform: translateY(-50%) translateX(-50%);
       background: #fff;
       padding: 20px; }
-  main #profile-wrapper .profile-h2 {
-    font-size: 42px;
-    text-align: center;
-    margin: 30px;
-    transition: all 3s;
-    text-shadow: #969696 2px 2px 2px;
-    -webkit-transition: all 3s;
-    -moz-transition: all 3s;
-    -ms-transition: all 3s;
-    -o-transition: all 3s; }
-  main #profile-wrapper .profile-inner {
-    display: flex;
-    height: 300px;
-    padding: 40px;
-    z-index: 4; }
-    main #profile-wrapper .profile-inner p {
-      margin-left: 30px; }
-    main #profile-wrapper .profile-inner .profile-img {
-      border-radius: 50%;
-      margin-left: 30px; }
-  main #profile-wrapper .profile-content {
-    width: 90%; }
-    main #profile-wrapper .profile-content h3 {
-      font-size: 32px;
-      padding: 10px;
-      margin-left: 20px;
-      margin-bottom: 20px; }
+  main #profile-wrapper {
+    width: 80%; }
+    main #profile-wrapper .profile-h2 {
+      font-size: 42px;
+      text-align: center;
+      margin: 30px;
+      transition: all 3s;
+      text-shadow: #969696 2px 2px 2px;
+      -webkit-transition: all 3s;
+      -moz-transition: all 3s;
+      -ms-transition: all 3s;
+      -o-transition: all 3s; }
+    main #profile-wrapper .profile-inner {
+      background: #fff;
+      display: flex;
+      padding: 40px;
+      z-index: 4; }
+      main #profile-wrapper .profile-inner dl {
+        margin-left: 20px; }
+        main #profile-wrapper .profile-inner dl dt {
+          font-size: 24px; }
+        main #profile-wrapper .profile-inner dl dd {
+          font-size: 18px;
+          margin-bottom: 15px; }
+      main #profile-wrapper .profile-inner p {
+        margin-left: 30px; }
+      main #profile-wrapper .profile-inner .profile-img {
+        border-radius: 50%;
+        margin-left: 20px; }
+    main #profile-wrapper .profile-content {
+      width: 90%; }
+      main #profile-wrapper .profile-content h3 {
+        font-size: 32px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px; }
   main #works-wrapper {
     margin: 100px 0;
     position: relative; }
-    main #works-wrapper .works-list ul {
-      background: #fff;
-      padding: 20px 15px;
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-      border: solid 1px #fff; }
-      main #works-wrapper .works-list ul li {
-        list-style: none;
-        margin-bottom: 30px; }
-        main #works-wrapper .works-list ul li img {
-          width: 50%; }
-    main #works-wrapper #formens-modal {
-      width: 40%;
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      z-index: 4;
-      padding: 30px; }
-      main #works-wrapper #formens-modal img {
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%; }
-      main #works-wrapper #formens-modal a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        cursor: pointer;
-        margin-right: 20px; }
-      main #works-wrapper #formens-modal a::before, main #works-wrapper #formens-modal a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-        margin: -8% 0 0 -42%;
-        background: #E91E63; }
-      main #works-wrapper #formens-modal a::before {
-        transform: rotate(-45deg); }
-      main #works-wrapper #formens-modal a::after {
-        transform: rotate(45deg); }
-    main #works-wrapper #always-modal {
-      width: 40%;
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      z-index: 4;
-      padding: 30px; }
-      main #works-wrapper #always-modal img {
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%; }
-      main #works-wrapper #always-modal a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        cursor: pointer;
-        margin-right: 20px; }
-      main #works-wrapper #always-modal a::before, main #works-wrapper #always-modal a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-        margin: -8% 0 0 -42%;
-        background: #E91E63; }
-      main #works-wrapper #always-modal a::before {
-        transform: rotate(-45deg); }
-      main #works-wrapper #always-modal a::after {
-        transform: rotate(45deg); }
-    main #works-wrapper #list-modal {
-      width: 40%;
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      z-index: 4;
-      padding: 30px;
-      top: 70% !important; }
-      main #works-wrapper #list-modal img {
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%; }
-      main #works-wrapper #list-modal a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        cursor: pointer;
-        margin-right: 20px; }
-      main #works-wrapper #list-modal a::before, main #works-wrapper #list-modal a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-        margin: -8% 0 0 -42%;
-        background: #E91E63; }
-      main #works-wrapper #list-modal a::before {
-        transform: rotate(-45deg); }
-      main #works-wrapper #list-modal a::after {
-        transform: rotate(45deg); }
-      main #works-wrapper #list-modal img {
-        zoom: 2 !important; }
-    main #works-wrapper #flower-modal {
-      width: 40%;
-      display: none;
-      position: absolute;
-      top: 200%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      z-index: 4;
-      padding: 30px; }
-      main #works-wrapper #flower-modal img {
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%; }
-      main #works-wrapper #flower-modal a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        cursor: pointer;
-        margin-right: 20px; }
-      main #works-wrapper #flower-modal a::before, main #works-wrapper #flower-modal a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-        margin: -8% 0 0 -42%;
-        background: #E91E63; }
-      main #works-wrapper #flower-modal a::before {
-        transform: rotate(-45deg); }
-      main #works-wrapper #flower-modal a::after {
-        transform: rotate(45deg); }
-    main #works-wrapper #inter-modal {
-      width: 40%;
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      z-index: 4;
-      padding: 30px; }
-      main #works-wrapper #inter-modal img {
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%; }
-      main #works-wrapper #inter-modal a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        cursor: pointer;
-        margin-right: 20px; }
-      main #works-wrapper #inter-modal a::before, main #works-wrapper #inter-modal a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-        margin: -8% 0 0 -42%;
-        background: #E91E63; }
-      main #works-wrapper #inter-modal a::before {
-        transform: rotate(-45deg); }
-      main #works-wrapper #inter-modal a::after {
-        transform: rotate(45deg); }
-      main #works-wrapper #inter-modal img {
-        zoom: 1; }
     main #works-wrapper .works-h2 {
       font-size: 42px;
       text-align: center;
@@ -310,8 +119,20 @@ main {
       -moz-transition: all 3s;
       -ms-transition: all 3s;
       -o-transition: all 3s; }
-    main #works-wrapper .always img {
-      padding-left: 20px; }
+    main #works-wrapper .works-list ul {
+      background: #fff;
+      padding: 20px 15px;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      border: solid 1px #fff; }
+      main #works-wrapper .works-list ul li {
+        list-style: none;
+        margin-bottom: 50px; }
+        main #works-wrapper .works-list ul li .pc-img {
+          width: 50%; }
+        main #works-wrapper .works-list ul li .sm-img {
+          width: 20%; }
   main #skills-wrapper .skills-h2 {
     font-size: 42px;
     text-align: center;
@@ -539,7 +360,7 @@ footer {
       height: 100vh;
       z-index: 3; }
     header .humbarger-menu {
-      background: gray;
+      background: #fff;
       width: 40%;
       position: fixed;
       transform: translate(300px);
@@ -558,71 +379,10 @@ footer {
     height: 580px; }
     main #profile-wrapper .profile-inner {
       display: block; }
-  main #formens-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: auto; }
-    main #formens-modal img {
-      zoom: 1.5 !important; }
-  main #always-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: auto;
-    top: 80%; }
-    main #always-modal img {
-      zoom: 1.5 !important; }
-  main #list-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: auto;
-    margin-left: 10px !important; }
-    main #list-modal img {
-      zoom: 1.5 !important; }
-  main #flower-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: auto;
-    top: 60% !important; }
-    main #flower-modal img {
-      zoom: 1.5 !important; }
-  main #inter-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: auto; }
-    main #inter-modal img {
-      zoom: 1.5 !important; }
-    main #inter-modal img {
-      zoom: 1 !important; }
+  main #works-wrapper .works-list ul li .pc-img {
+    width: 70%; }
+  main #works-wrapper .works-list ul li .sm-img {
+    width: 30%; }
   main #cando-wrapper .cando-list li .lp-img {
     width: 50%;
     display: block;
@@ -659,77 +419,6 @@ footer {
     font-family: "Permanent Marker", cursive !important;
     font-size: 50px; }
   main #works-wrapper {
-    margin-top: 300px; }
-
-  #formens-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: 80% !important;
-    top: 14% !important; }
-    #formens-modal img {
-      zoom: 1.5 !important; }
-
-  #always-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: 80% !important;
-    top: 90% !important; }
-    #always-modal img {
-      zoom: 1.5 !important; }
-
-  #list-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: 80% !important;
-    margin-left: 10px !important; }
-    #list-modal img {
-      zoom: 1.5 !important; }
-
-  #flower-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: 80% !important; }
-    #flower-modal img {
-      zoom: 1.5 !important; }
-
-  #inter-modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    width: 80% !important;
-    top: 90% !important; }
-    #inter-modal img {
-      zoom: 1.5 !important; }
-    #inter-modal img {
-      zoom: 1 !important; } }
+    margin-top: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
