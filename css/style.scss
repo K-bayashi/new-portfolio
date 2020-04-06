@@ -16,53 +16,6 @@
     -ms-transition: all 3s;
     -o-transition: all 3s;
 }
-@mixin  modal { //modal用のcss
-    width:40%;
-    display: none;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    margin: 0;
-    z-index: 4;
-    padding: 30px;
-    img{
-        zoom: 1.5;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-    }
-}
-
-@mixin modal-cancel { //モーダルのキャンセルボタン
-    a{
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        border: 1px solid rgba(0,0,0,.1);
-        background: #ffffff;;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-    a::before,a::after{
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 84%;
-        height: 16%;
-         margin: -8% 0 0 -42%;
-         background: #E91E63;
-    }
-    a::before {
-        transform: rotate(-45deg);
-      }
-    a::after {
-        transform: rotate(45deg);
-      }
-}
 
 $main-color:rgb(151, 150, 150); //メインの色
 
@@ -104,6 +57,15 @@ $main-color:rgb(151, 150, 150); //メインの色
     
     main{
         background: linear-gradient(to bottom right,#fff,rgb(88, 88, 88));
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center{
+            display: block;
+            margin: 0 auto;
+        }
         .modal-bg{
             width: 100%;
             height: 100%;
@@ -134,20 +96,31 @@ $main-color:rgb(151, 150, 150); //メインの色
             }
         }
         #profile-wrapper{
+            width: 80%;
             .profile-h2{
                 @include Head2();
             }
            .profile-inner{
+            background: #fff;
                display: flex;
-               height:300px;
                padding: 40px;
                z-index: 4;
+               dl{
+                   margin-left: 20px;
+                   dt{
+                    font-size: 24px;
+                   }
+                   dd{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                   }
+               }
                p{
                    margin-left: 30px;
                }
                .profile-img{
                 border-radius: 50%;
-                margin-left: 30px;
+                margin-left: 20px;
             }
            }
            .profile-content{
@@ -164,6 +137,9 @@ $main-color:rgb(151, 150, 150); //メインの色
         #works-wrapper{
             margin:100px 0;
             position:relative;
+            .works-h2{
+                @include Head2();
+            }
             .works-list{
                 ul{
                     background: #fff;
@@ -174,62 +150,16 @@ $main-color:rgb(151, 150, 150); //メインの色
                         border: solid 1px #fff;
                     li{
                         list-style: none;
-                        margin-bottom: 30px;
-                        img{
+                        margin-bottom: 50px;
+                        .pc-img{
                             width: 50%;
+                        }
+                        .sm-img{
+                            width: 20%;
                         }
                     }
                 }
             }
-            #formens-modal{
-                @include modal();
-                @include modal-cancel();
-            }
-            #always-modal{
-                @include modal();
-                @include modal-cancel();
-            }
-            #list-modal{
-                @include modal();
-                top: 70%!important;
-                @include modal-cancel();
-                img{
-                    zoom: 2!important;
-                }
-            }
-            #flower-modal{
-                width:40%;
-                display: none;
-                position: absolute;
-                top:200%;
-                left: 50%;
-                transform:translate(-50%,-50%);
-                margin: 0;
-                z-index: 4;
-                padding: 30px;
-                img{
-                    zoom: 1.5;
-                    margin: 0 auto;
-                    display: block;
-                    max-width: 100%;
-                }
-                @include modal-cancel();
-            }
-            #inter-modal{
-                @include modal();
-                @include modal-cancel();
-                img{
-                    zoom: 1;
-                }
-            }
-          .works-h2{
-              @include Head2();
-          }
-          .always{
-              img{
-                  padding-left: 20px;
-              }
-          }
         }
     
         #skills-wrapper{
@@ -426,21 +356,6 @@ opacity: 0.5;
 
 @media screen and (max-width:768px){ //タブレット用css 
 
-    @mixin modal-tab{
-        display: none;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform:translate(-50%,-50%);
-        margin: 0;
-        z-index: 4;
-        padding: 30px;
-        width: auto;
-        img{
-            zoom: 1.5!important;
-        }
-    }
-
     header{
         position: relative;
         .hover{
@@ -508,7 +423,7 @@ opacity: 0.5;
                 z-index: 3;
           }
         .humbarger-menu{
-            background: gray;
+            background:#fff;
             width: 40%;
            position: fixed;
            transform: translate(300px);
@@ -536,25 +451,18 @@ opacity: 0.5;
                 display: block;
             }
         }
-        #formens-modal{
-           @include modal-tab();
-        }
-        #always-modal{
-            @include modal-tab();
-            top: 80%;
-        }
-        #list-modal{
-            @include modal-tab();
-            margin-left:10px !important;
-        }
-        #flower-modal{
-            @include modal-tab();
-            top: 60%!important;
-        }
-        #inter-modal{
-            @include modal-tab();
-            img{
-                zoom:1!important;
+        #works-wrapper{
+            .works-list{
+                ul{
+                    li{
+                        .pc-img{
+                            width: 70%;
+                        }
+                        .sm-img{
+                            width: 30%;
+                        }
+                    }
+                }
             }
         }
         #cando-wrapper{
@@ -610,20 +518,6 @@ opacity: 0.5;
     }
 }
 @media screen and (max-width:450px){
-    @mixin modal-mobile {
-        display: none;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform:translate(-50%,-50%);
-        margin: 0;
-        z-index: 4;
-        padding: 30px;
-        width: 80%!important;
-        img{
-            zoom: 1.5!important;
-        }
-    }
     main{
         .main-top{
             .top-text{
@@ -635,27 +529,4 @@ opacity: 0.5;
             margin-top: 300px;
         }
     }
-    
-    #formens-modal{
-        @include modal-mobile();
-        top: 14%!important;
-     }
-     #always-modal{
-         @include modal-mobile();
-         top: 90%!important;
-     }
-     #list-modal{
-         @include modal-mobile();
-         margin-left:10px !important;
-     }
-     #flower-modal{
-         @include modal-mobile();
-     }
-     #inter-modal{
-         @include modal-mobile();
-         top: 90%!important;
-         img{
-             zoom:1!important;
-         }
-     }
 }
